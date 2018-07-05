@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    {% load staticfiles %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+    <!-- global styles -->
+    <link href="{% static '/themes/css/flexslider.css' %}" rel="stylesheet"/>
+    <link href="{% static '/themes/css/main.css' %}" rel="stylesheet"/>
+    
+    <!-- scripts -->
+    <script src="{% static '/themes/js/jquery-1.7.2.min.js' %}"></script>
+    <script src="{% static '/themes/js/bootstrap.min.js' %}"></script>				
+    <script src="{% static '/themes/js/superfish.js' %}"></script>	
+    <script src="{% static '/themes/js/jquery.scrolltotop.js' %}"></script>
+    <style type="text/css" >
+        body {
+            padding-top: 54px;
+            background-image: url('../../static/img/fundosao.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #000000;
+        }
+        .navbar1 {
+            background: rgb(125,126,125); /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+            border-radius: 4px;
+            border-bottom: 3px solid #ab520d;
+        }
+        a.nav-link {
+            color: #ffb221;
+        }
+        a.nav-link:hover {
+            color: #f9cc06;
+        }
+        .jumbotron1 {
+            background-color:#474747;
+            padding-top:0px;
+        }
+        .fundo {
+            border-color: #ffb221;
+            background-color: #ffb221;
+            color: #474747;
+        }
+        .fundo:hover {
+            border-color: #474747;
+            background-color: #474747;
+            color: #ffb221;
+        }
+    </style>
+    <title>Sao Marcos - Servicos Agricolas</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar1 navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="{% static '/img/logo.png' %}"alt="Sao Marcos" height="80" width="80" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a style="color:#f6cc11;" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:#f6cc11;"  class="nav-link" href="#">Vendas</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:#f6cc11;"  class="nav-link" href="#">Servicos</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:#f6cc11;"  class="nav-link " href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:#f6cc11;"  class="nav-link " href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <a style="color:#f6cc11;"  class="nav-link " href="#"><img src="{% static '/img/fone.png' %}"alt="Telefone" height="30" width="30"/>(67) 3521-0646 / (67) 99181-4436</a>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static '/img/car1.jpg' %}" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static '/img/car2.jpg' %}" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static '/img/car3.jpg' %}" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    &ensp;<br /><br />
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top" src="{% static '/img/1.jpg' %}" alt="VOLVO FM370">
+        <div class="card-body">
+        <h5 class="card-title">VOLVO FM370</h5>
+        <p class="card-text">- 4x2 <br />- 10/10</p>
+        <a href="#" class="btn btn-primary fundo">Detalhes</a>
+        </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static '/img/2.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+               <h5 class="card-title">VW 18.310</h5>
+                <p class="card-text">- 4x2<br />- 04/04 <br />- Basculante</p>
+                <a href="#" class="btn btn-primary fundo">Detalhes</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static '/img/3.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">SCANIA G420</h5>
+            <p class="card-text">- 6x4<br />- 10/10</p>
+            <a href="#" class="btn btn-primary fundo">Detalhes</a>
+        </div>
+        </div>
+    </div>
+    &ensp;<br /><br />
+    <div class="jumbotron">
+       
+    </div>
+    <div class="jumbotron1">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 mt-4">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase"><img src="{% static '/img/logo.png' %}"alt="Sao Marcos" height="50" width="50" /></h5>
+          <p>Prestando servicos de qualidade desde 1982.</p>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#!"class="nav-link">Vendas</a>
+              </li>
+              <li>
+                <a href="#!"class="nav-link">Servicos</a>
+              </li>
+              <li>
+                <a href="#!"class="nav-link">Sobre</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> 2018 Copyright:
+      <a href="#" style="color: #f9cc06;"> HeadTec Desenvolvimento de Sistemas</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </div>
+    
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
