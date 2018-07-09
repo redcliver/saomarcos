@@ -1,0 +1,1 @@
+web: gunicorn saomarcos.wsgi --log-file - 

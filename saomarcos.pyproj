@@ -30,6 +30,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="contato\admin.py" />
+    <Compile Include="contato\apps.py" />
+    <Compile Include="contato\migrations\__init__.py" />
+    <Compile Include="contato\models.py" />
+    <Compile Include="contato\tests.py" />
+    <Compile Include="contato\urls.py" />
+    <Compile Include="contato\views.py" />
+    <Compile Include="contato\__init__.py" />
     <Compile Include="home\admin.py" />
     <Compile Include="home\apps.py" />
     <Compile Include="home\migrations\__init__.py" />
@@ -41,22 +49,73 @@
     <Compile Include="home\views.py" />
     <Compile Include="home\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Procfile">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="saomarcos\__init__.py" />
     <Compile Include="saomarcos\settings.py" />
     <Compile Include="saomarcos\urls.py" />
     <Compile Include="saomarcos\wsgi.py" />
+    <Compile Include="servico\admin.py" />
+    <Compile Include="servico\apps.py" />
+    <Compile Include="servico\migrations\__init__.py" />
+    <Compile Include="servico\models.py" />
+    <Compile Include="servico\tests.py" />
+    <Compile Include="servico\urls.py" />
+    <Compile Include="servico\views.py" />
+    <Compile Include="servico\__init__.py" />
+    <Compile Include="sobre\admin.py" />
+    <Compile Include="sobre\apps.py" />
+    <Compile Include="sobre\migrations\__init__.py" />
+    <Compile Include="sobre\models.py" />
+    <Compile Include="sobre\tests.py" />
+    <Compile Include="sobre\urls.py" />
+    <Compile Include="sobre\views.py" />
+    <Compile Include="sobre\__init__.py" />
+    <Compile Include="venda\admin.py" />
+    <Compile Include="venda\apps.py" />
+    <Compile Include="venda\migrations\__init__.py" />
+    <Compile Include="venda\models.py" />
+    <Compile Include="venda\tests.py" />
+    <Compile Include="venda\urls.py" />
+    <Compile Include="venda\views.py" />
+    <Compile Include="venda\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="home\templates\index.html" />
+    <Content Include=".gitignore">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="contato\templates\contato.html" />
+    <Content Include="home\templates\base.html" />
+    <Content Include="home\templates\home\home.html" />
     <Content Include="requirements.txt" />
+    <Content Include="servico\templates\servicos.html" />
+    <Content Include="sobre\templates\sobre.html" />
+    <Content Include="venda\templates\vendas.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="contato\" />
+    <Folder Include="contato\migrations\" />
+    <Folder Include="contato\templates\" />
     <Folder Include="home\" />
     <Folder Include="home\migrations\" />
     <Folder Include="home\static\" />
     <Folder Include="home\static\img\" />
     <Folder Include="home\templates\" />
+    <Folder Include="home\templates\home\" />
     <Folder Include="saomarcos\" />
+    <Folder Include="servico\" />
+    <Folder Include="servico\migrations\" />
+    <Folder Include="servico\templates\" />
+    <Folder Include="sobre\" />
+    <Folder Include="sobre\migrations\" />
+    <Folder Include="sobre\templates\" />
+    <Folder Include="venda\" />
+    <Folder Include="venda\migrations\" />
+    <Folder Include="venda\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

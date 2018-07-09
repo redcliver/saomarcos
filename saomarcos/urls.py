@@ -11,6 +11,9 @@ from django.conf.urls import include, url
 urlpatterns = [
     url(r'^$', include('home.urls')),
     url(r'^contato/', include('contato.urls')),
+    url(r'^venda/', include('venda.urls')),
+    url(r'^servico/', include('servico.urls')),
+    url(r'^sobre/', include('sobre.urls')),
     # Examples:
     # url(r'^$', saomarcos.views.home, name='home'),
     # url(r'^saomarcos/', include('saomarcos.saomarcos.urls')),
